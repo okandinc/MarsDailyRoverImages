@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/daily_images_navigation"
+            app:startDestination="@id/dailyImageListFragment">
+
+    <fragment android:id="@+id/dailyImageListFragment"
+              android:name="com.okandinc.marsdailyroverimages.ui.list.RoverImageListFragment"
+              android:label="DailyImageListFragment">
+              <action
+                      android:id="@+id/action_dailyImageListFragment_to_dailyImageDetailFragment"
+                      app:destination="@id/dailyImageDetailFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/dailyImageDetailFragment"
+            android:name="com.okandinc.marsdailyroverimages.ui.detail.RoverImageDetailFragment"
+            android:label="DailyImageDetailFragment"/>
+</navigation>

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MarsDailyRoverImages</string>
+
+    <string name="rover">Rover:</string>
+    <string name="earthdate">Earth Date:</string>
+    <string name="sol">Martian Sol:</string>
+    <string name="abbreviation">Camera:</string>
+    <string name="landingdate">Landing Date:</string>
+    <string name="launchdate">Launch Date:</string>
+    <string name="maxdate">Last Communication:</string>
+    <string name="status">Status:</string>
+    <string name="totalPhotos">Total Images:</string>
+
+    <string name="messageInvalidActivity">Invalid Activity</string>
+    <string name="errorMessage">An error occurred while loading Rover Images</string>
 </resources>

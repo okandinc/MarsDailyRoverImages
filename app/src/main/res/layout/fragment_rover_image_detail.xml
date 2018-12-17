@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/imgRover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:layout_marginTop="@dimen/detail_margin_top"
+                android:layout_marginEnd="@dimen/detail_margin_end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/txtCameraAbbreviation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:gravity="start|center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="CameraAbbreviation"
+                app:layout_constraintTop_toBottomOf="@+id/imgRover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/txtEarthDate"/>
+
+        <TextView
+                android:id="@+id/txtEarthDate"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/detail_text_margin_start"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="EarthDate"
+                app:layout_constraintStart_toEndOf="@+id/txtCameraAbbreviation"
+                app:layout_constraintBottom_toBottomOf="@+id/txtCameraAbbreviation"
+                app:layout_constraintTop_toTopOf="@+id/txtCameraAbbreviation"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/txtRoverName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="RoverName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCameraAbbreviation"/>
+
+
+        <TextView
+                android:id="@+id/txtRoverLandingDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="LandingDate"
+                app:layout_constraintTop_toBottomOf="@+id/txtRoverName"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/txtLaunchDate"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="LaunchDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRoverLandingDate"/>
+
+        <TextView
+                android:id="@+id/txtMaxDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="MaxDate"
+                app:layout_constraintTop_toBottomOf="@+id/txtLaunchDate"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="Status"
+                app:layout_constraintTop_toBottomOf="@+id/txtMaxDate"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/txtTotalPhotos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_text_margin_top"
+                android:layout_marginStart="@dimen/detail_margin_start"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="TotalPhotos"
+                app:layout_constraintTop_toBottomOf="@+id/txtStatus"
+                app:layout_constraintStart_toStartOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
